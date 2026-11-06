@@ -24,4 +24,14 @@ Zest Cam only asks for the camera. Photos are saved to `Pictures/ZestCam`, and n
 
 ### Check the download (optional)
 
-The SHA-256 of the APK is in `SHA256SUMS.txt`.
+The SHA-256 of the APK is in `SHA256SUMS.txt`. To check that your download wasn't changed or corrupted, run one of these on the APK you downloaded and compare the result with the line for that file in `SHA256SUMS.txt`:
+
+- **Windows (Command Prompt):** `certutil -hashfile Zest-Cam.apk SHA256`
+- **macOS:** `shasum -a 256 Zest-Cam.apk`
+- **Linux:** `sha256sum Zest-Cam.apk`
+
+Replace `Zest-Cam.apk` with the exact file name you downloaded. If the two values match, the file is the original.
+
+## Questions and feedback
+
+Have a question, found a bug, or want a feature? Ask in [Discussions](../../discussions).
